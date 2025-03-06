@@ -63,6 +63,7 @@ This document provides details about the `POST /budget/create` endpoint, includi
 | Parameter           | Type     | Required | Description |
 |---------------------|----------|----------|-------------|
 | `name`             | String   | Yes      | Name of the budget project. |
+| `user_email`       | String   | Yes      | user email for creating budget project. |
 | `product_id`       | String   | Yes      | ID of the product associated with the budget. |
 | `main`             | Object   | Yes      | Contains details of the main product dimensions and finishing. |
 | `main.[index].h`   | Integer  | Yes      | Height of the product in mm. |
@@ -84,6 +85,7 @@ This document provides details about the `POST /budget/create` endpoint, includi
 ```json
 {
   "name": "project name 1",
+  "user_email": "email@email.com",
   "product_id": "75",
   "main": {
     "1": {
